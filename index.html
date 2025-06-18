@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Velvet Fork – Menu</title>
   <style>
-    /* Reset and base styles */
     * {
       margin: 0;
       padding: 0;
@@ -21,7 +20,7 @@
 
     header {
       text-align: center;
-      padding: 1.5rem 1rem 0.5rem;
+      padding: 2rem 1rem 1rem;
     }
 
     h1 {
@@ -36,47 +35,46 @@
 
     main.menu-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1600px;
+      margin: auto;
     }
 
-    .menu-container img {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
+    .page {
+      width: calc(50% - 2rem);
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background: white;
+      transition: transform 0.3s;
     }
 
-    .menu-container img:hover {
+    .page:hover {
       transform: scale(1.01);
     }
 
-    /* Responsive Typography */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
+    .page img {
+      width: 100%;
+      display: block;
+    }
 
-      p {
-        font-size: 1rem;
+    @media (max-width: 900px) {
+      .page {
+        width: 100%;
       }
     }
 
     @media (max-width: 480px) {
       h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
       }
 
       p {
-        font-size: 0.95rem;
-      }
-
-      .menu-container img {
-        margin-bottom: 1rem;
+        font-size: 1rem;
       }
     }
   </style>
@@ -88,22 +86,22 @@
   </header>
 
   <main class="menu-container">
-    <img src="menu1.jpg" alt="Menu Page 1"/>
-    <img src="menu2.jpg" alt="Menu Page 2"/>
-    <img src="menu3.jpg" alt="Menu Page 3"/>
-    <img src="menu4.jpg" alt="Menu Page 4"/>
-    <img src="menu5.jpg" alt="Menu Page 5"/>
-    <img src="menu6.jpg" alt="Menu Page 6"/>
-    <img src="menu7.jpg" alt="Menu Page 7"/>
-    <img src="menu8.jpg" alt="Menu Page 8"/>
-    <img src="menu9.jpg" alt="Menu Page 9"/>
-    <img src="menu10.jpg" alt="Menu Page 10"/>
-    <img src="menu11.jpg" alt="Menu Page 11"/>
-    <img src="menu12.jpg" alt="Menu Page 12"/>
-    <img src="menu13.jpg" alt="Menu Page 13"/>
-    <img src="menu14.jpg" alt="Menu Page 14"/>
-    <img src="menu15.jpg" alt="Menu Page 15"/>
-    <img src="menu16.jpg" alt="Menu Page 16"/>
+    <div class="page"><img src="menu1.webp" alt="Menu Page 1"/></div>
+    <div class="page"><img src="menu2.webp" alt="Menu Page 2"/></div>
+    <div class="page"><img src="menu3.webp" alt="Menu Page 3"/></div>
+    <div class="page"><img src="menu4.webp" alt="Menu Page 4"/></div>
+    <div class="page"><img src="menu5.webp" alt="Menu Page 5"/></div>
+    <div class="page"><img src="menu6.webp" alt="Menu Page 6"/></div>
+    <div class="page"><img src="menu7.webp" alt="Menu Page 7"/></div>
+    <div class="page"><img src="menu8.webp" alt="Menu Page 8"/></div>
+    <div class="page"><img src="menu9.webp" alt="Menu Page 9"/></div>
+    <div class="page"><img src="menu10.webp" alt="Menu Page 10"/></div>
+    <div class="page"><img src="menu11.webp" alt="Menu Page 11"/></div>
+    <div class="page"><img src="menu12.webp" alt="Menu Page 12"/></div>
+    <div class="page"><img src="menu13.webp" alt="Menu Page 13"/></div>
+    <div class="page"><img src="menu14.webp" alt="Menu Page 14"/></div>
+    <div class="page"><img src="menu15.webp" alt="Menu Page 15"/></div>
+    <div class="page"><img src="menu16.webp" alt="Menu Page 16"/></div>
   </main>
 </body>
 </html>
