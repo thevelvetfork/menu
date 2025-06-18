@@ -2,101 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Velvet Fork – Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gourmet Spot – Menu</title>
   <style>
+    /* Reset and base styles */
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
+    html, body {
       font-family: "Segoe UI", sans-serif;
       background-color: #fffaf5;
       color: #333;
-      padding: 1rem;
+      line-height: 1.5;
     }
 
     header {
       text-align: center;
-      padding: 1rem 0;
+      padding: 1.5rem 1rem 0.5rem;
     }
 
     h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
     }
 
     p {
-      margin: 0;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #666;
     }
 
-    .menu-container {
+    main.menu-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 1rem 0;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
     }
 
     .menu-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
       width: 100%;
-      max-width: 600px;
+      max-width: 800px;
+      height: auto;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
     }
 
     .menu-container img:hover {
-      transform: scale(1.02);
+      transform: scale(1.01);
     }
 
+    /* Responsive Typography */
     @media (max-width: 768px) {
       h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
-      .menu-container {
-        gap: 1rem;
+
+      p {
+        font-size: 1rem;
       }
     }
 
     @media (max-width: 480px) {
-      body {
-        padding: 0.5rem;
+      h1 {
+        font-size: 1.6rem;
       }
+
+      p {
+        font-size: 0.95rem;
+      }
+
       .menu-container img {
-        max-width: 100%;
+        margin-bottom: 1rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>The Velvet Fork Spot</h1>
-    <p>Scan the QR code to view this menu anytime.</p>
+    <h1>The Gourmet Spot</h1>
+    <p>View our menu below or scan the QR code in-store</p>
   </header>
 
   <main class="menu-container">
-    <img src="menu1.jpg" alt="Menu Page 1" />
-    <img src="menu2.jpg" alt="Menu Page 2" />
-    <img src="menu3.jpg" alt="Menu Page 3" />
-    <img src="menu4.jpg" alt="Menu Page 4" />
-    <img src="menu5.jpg" alt="Menu Page 5" />
-    <img src="menu6.jpg" alt="Menu Page 6" />
-    <img src="menu7.jpg" alt="Menu Page 7" />
-    <img src="menu8.jpg" alt="Menu Page 8" />
-    <img src="menu9.jpg" alt="Menu Page 9" />
-    <img src="menu10.jpg" alt="Menu Page 10" />
-    <img src="menu11.jpg" alt="Menu Page 11" />
-    <img src="menu12.jpg" alt="Menu Page 12" />
-    <img src="menu13.jpg" alt="Menu Page 13" />
-    <img src="menu14.jpg" alt="Menu Page 14" />
-    <img src="menu15.jpg" alt="Menu Page 15" />
-    <img src="menu16.jpg" alt="Menu Page 16" />
+    <img src="menu1.jpg" alt="Menu Page 1" loading="lazy" />
+    <img src="menu2.jpg" alt="Menu Page 2" loading="lazy"/>
+    <img src="menu3.jpg" alt="Menu Page 3" loading="lazy"/>
+    <img src="menu4.jpg" alt="Menu Page 4" loading="lazy"/>
+    <img src="menu5.jpg" alt="Menu Page 5" loading="lazy"/>
+    <img src="menu6.jpg" alt="Menu Page 6" loading="lazy"/>
+    <img src="menu7.jpg" alt="Menu Page 7" loading="lazy"/>
+    <img src="menu8.jpg" alt="Menu Page 8" loading="lazy"/>
+    <img src="menu9.jpg" alt="Menu Page 9" loading="lazy"/>
+    <img src="menu10.jpg" alt="Menu Page 10" loading="lazy"/>
+    <img src="menu11.jpg" alt="Menu Page 11" loading="lazy"/>
+    <img src="menu12.jpg" alt="Menu Page 12" loading="lazy"/>
+    <img src="menu13.jpg" alt="Menu Page 13" loading="lazy"/>
+    <img src="menu14.jpg" alt="Menu Page 14" loading="lazy"/>
+    <img src="menu15.jpg" alt="Menu Page 15" loading="lazy"/>
+    <img src="menu16.jpg" alt="Menu Page 16" loading="lazy"/>
   </main>
 </body>
 </html>
